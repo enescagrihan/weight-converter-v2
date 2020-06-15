@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+    <title>Weigh Converter V2</title>
+    <style>
+        body {
+            margin-top: 70px;
+            background-color: #a9d7d1;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Weigh Converter</h1>
+                <form class="form-inline">
+                    <input type="number" id="input" class="form-control form-control-lg col-md-9" placeholder="Enter Pounds...">
+                    <select class="custom-select custom-select-lg col-md-3" id="select">
+                        <option value="1">Grams</option>
+                        <option value="2">Kilograms</option>
+                        <option value="3">Ounces</option>
+                    </select>
+                </form>
+                <hr>
+                <div id="output">
+                    <div class="card">
+                        <div class="card-body text-dark">
+                            <h4 id="title"></h4>
+                            <p id="result"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
